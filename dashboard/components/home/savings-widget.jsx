@@ -29,9 +29,9 @@ export default function SavingsWidget() {
           return (
             <Card
               key={index}
-              className="rounded-xl p-4 bg-white shadow-md transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer  flex flex-col items-center justify-center"
+              className="rounded-xl p-4 bg-white shadow-md transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer"
             >
-              <div className="flex flex-col gap-2  items-center">
+              <div className="flex flex-col gap-2">
                 <Icon
                   className={`w-10 h-10 text-gray-700 font-bold rounded-full p-3 ${goal.bg} transition-all duration-300 hover:scale-110`}
                 />
