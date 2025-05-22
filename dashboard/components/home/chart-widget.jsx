@@ -40,6 +40,7 @@ export default function ChartWidget() {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
+      className="w-full"
     >
       <Card className="rounded-xl p-4 space-y-4 mt-6 shadow-md hover:shadow-xl transition-shadow duration-300">
         {/* Header */}

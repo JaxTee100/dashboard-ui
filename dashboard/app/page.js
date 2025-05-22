@@ -12,19 +12,19 @@ export default function Home() {
 
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
       <div className="lg:col-span-8">
-        <div className="p-4 lg:p-6">
+        <div className="p-4 lg:p-6  flex justify-center">
           <CardItem />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-6 gap-4 ">
-          <div className="p-4 lg:p-6 col-span-3">
+          <div className="p-4 lg:p-6 col-span-3  flex justify-center">
             <ChartWidget />
           </div>
-          <div className="col-span-3">
+          <div className="col-span-3 flex  justify-center">
             <SavingsWidget />
           </div>
         </div>
       </div>
-      <div className="w-full md:max-w-lg flex flex-col gap-4 mx-auto lg:col-span-4">
+      <div className="w-full md:max-w-lg flex flex-col justify-center gap-4 mx-auto lg:col-span-4 ">
         <div className="p-4 lg:p-6">
           <ContactsCard />
         </div>

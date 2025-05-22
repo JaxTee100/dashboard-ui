@@ -12,7 +12,7 @@ const goals = [
 
 export default function SavingsWidget() {
   return (
-    <div className="p-2">
+    <div className="p-2  w-full">
       <div className="flex items-center justify-between mb-4">
         <h1 className="text-2xl font-extrabold tracking-wide">Savings</h1>
         <div className="flex gap-2">
