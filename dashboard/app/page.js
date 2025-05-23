@@ -11,11 +11,11 @@ export default function Home() {
    
 
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
-      <div className="lg:col-span-8">
-        <div className="p-4 lg:p-6  flex justify-center">
+      <div className="lg:col-span-8 gap-4 flex flex-col">
+        <div className=" flex justify-center ">
           <CardItem />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-4  ">
           <div className="p-4 lg:p-6 col-span-3  flex justify-center">
             <ChartWidget />
           </div>
@@ -24,11 +24,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full md:max-w-lg flex flex-col justify-center gap-4 mx-auto lg:col-span-4 ">
-        <div className="p-4 lg:p-6">
+      <div className="w-full md:max-w-lg flex flex-col  gap-4 mx-auto lg:col-span-4">
+        <div className="">
           <ContactsCard />
         </div>
-        <div className="p-4 lg:p-6">
+        <div className="">
          <MyCards />
         </div>
       </div>

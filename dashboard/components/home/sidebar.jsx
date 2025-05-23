@@ -35,7 +35,7 @@ export default function Sidebar({ mobileOpen, setMobileOpen }) {
     <>
       {/* Desktop Sidebar */}
       <aside
-        className={`hidden p-4 lg:flex flex-col overflow-y-hidden h-screen  border-r-2 border-blue-200 bg-white transition-all duration-300 ease-in-out ${expanded ? 'w-64' : 'w-20'
+        className={`hidden p-4 lg:flex flex-col min-h-screen overflow-y-auto  border-r-2 border-blue-200 bg-white transition-all duration-300 ease-in-out ${expanded ? 'w-64' : 'w-20'
           }`}
       >
         {/* Toggle Button */}
@@ -44,7 +44,7 @@ export default function Sidebar({ mobileOpen, setMobileOpen }) {
           <button onClick={() => setExpanded(!expanded)}>
             <MdDashboard size={24} className='text-blue-500 hover:text-blue-300' />
           </button>
-          {expanded && <span className="text-lg font-semibold text-lg text-blue-500">Dashboard</span>}
+          {expanded && <span className=" font-semibold text-lg text-blue-500">Dashboard</span>}
         </div>
 
         {/* Navigation Items */}
@@ -55,7 +55,7 @@ export default function Sidebar({ mobileOpen, setMobileOpen }) {
               <Link
                 key={name}
                 href={href}
-                className={`flex items-center px-2 py-4 rounded-md transition-all duration-300 ease-in-out ${isActive ? 'text-blue-500 ' : 'text-gray-700 hover:bg-gray-100'
+                className={`flex items-center px-2 py-2  transition-all duration-300 ease-in-out ${isActive ? 'text-blue-500 border-b-2 border-blue-500 ' : 'text-gray-700 hover:bg-gray-100'
                   }`}
               >
                 <Icon size={20} className="min-w-[20px]" />
